@@ -5,6 +5,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# use gem devise for authentication
+gem 'devise'
+# use gem twitter-bootstrap-rails
+gem 'twitter-bootstrap-rails'
+# use gem devise-bootstrap-views
+gem 'devise-bootstrap-views'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
