@@ -11,9 +11,10 @@ gem 'devise'
 gem 'twitter-bootstrap-rails'
 # use gem devise-bootstrap-views
 gem 'devise-bootstrap-views'
-
+# use jquery for bootstrap
 gem 'jquery-rails'
-
+# use stock-quote for stock quote functionality
+gem 'stock_quote'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
