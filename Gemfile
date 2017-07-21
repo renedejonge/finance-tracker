@@ -15,6 +15,8 @@ gem 'devise-bootstrap-views'
 gem 'jquery-rails'
 # use stock-quote for stock quote functionality
 gem 'stock_quote'
+# font awesome sass ruby gem (use fa-search favicon)
+gem 'font-awesome-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
