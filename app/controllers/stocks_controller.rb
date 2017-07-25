@@ -10,7 +10,8 @@ class StocksController < ApplicationController
       #render json: @stock
       render partial: 'lookup'
     else
-      render status: :not_found, nothing: true
+      #render status: :not_found, nothing: true # geeft een foutmelding
+      render status: 404
     end
   end
 
