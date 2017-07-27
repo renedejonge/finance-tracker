@@ -16,6 +16,14 @@
 //= require turbolinks
 //= require_tree .
 
+function hide_spinner(){
+  $('#spinner').hide();
+}
+
+function show_spinner(){
+  $('#spinner').show();
+}
+
 /*
 var hide_spinner = function(){
   $('#spinner').hide();
@@ -26,10 +34,3 @@ var show_spinner = function(){
 }
 */
 
-function hide_spinner(){
-  $('#spinner').hide();
-}
-
-function show_spinner(){
-  $('#spinner').show();
-}
