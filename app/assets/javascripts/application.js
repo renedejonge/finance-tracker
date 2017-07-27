@@ -24,7 +24,17 @@ function show_spinner(){
   $('#spinner').show();
 }
 
-/*
+/* dit werkt ook, geen gebruik van jquery
+
+function show_spinner(){
+  document.getElementById("spinner").style.display='block';
+}
+
+*/
+
+
+/* andere syntax, anonieme functie toegewezen aan variabele bij initialisatie
+
 var hide_spinner = function(){
   $('#spinner').hide();
 }
