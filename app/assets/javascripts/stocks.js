@@ -9,7 +9,7 @@ init_stock_lookup = function() {
 
   $('#stock-lookup-form').on('ajax:after', function(event,data,status){
     hide_spinner();
-    document.write("ajax:after"); //wordt niet uitgevoerd
+    document.write("ajax:after"); //wordt niet uitgevoerd???
   });
   
   $('#stock-lookup-form').on('ajax:success', function(event,data,status){
@@ -23,7 +23,7 @@ init_stock_lookup = function() {
     hide_spinner();
     $('#stock-lookup-results').replaceWith(' ');
     $('#stock-lookup-errors').replaceWith('Stock was not found');
-    document.write("ajax:error");
+    //document.write("ajax:error");
   });
 
 }
