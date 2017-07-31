@@ -24,23 +24,28 @@ function show_spinner(){
   $('#spinner').show();
 }
 
+// !!! PLAATS BOVEN DEZE REGEL GEEN COMMENTS !!!
+
+
 /* dit werkt ook, geen gebruik van jquery
 
-function show_spinner(){
-  document.getElementById("spinner").style.display='block';
-}
+    function show_spinner(){
+      document.getElementById("spinner").style.display='block';
+    }
 
 */
 
 
+
 /* andere syntax, anonieme functie toegewezen aan variabele bij initialisatie
 
-var hide_spinner = function(){
-  $('#spinner').hide();
-}
+    var hide_spinner = function(){
+      $('#spinner').hide();
+    }
 
-var show_spinner = function(){
-  $('#spinner').show();
-}
+    var show_spinner = function(){
+      $('#spinner').show();
+    }
+
 */
 
