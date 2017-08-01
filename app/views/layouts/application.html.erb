@@ -60,6 +60,7 @@
         <div class="col-lg-9">
           <%= bootstrap_flash %>
           <%= yield %>
+          
         </div>
 
         <!-- comment out sidebar 
@@ -79,12 +80,15 @@
         end comment out sidebar -->
 
       </div>
-
-      <footer>
-        <p>&copy; Company 2017</p>
-      </footer>
-
+    
     </div> <!-- /container -->
+    
+    
+    <footer>
+      <p>&copy; Company 2017</p>
+    </footer>
+    
     <%= debug(params) if Rails.env.development? %>
+
   </body>
 </html>
