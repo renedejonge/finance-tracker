@@ -1,9 +1,11 @@
 <div id="friend-lookup">
   <h3>Search for friends</h3>
   <%= form_tag search_friends_path, remote: true, method: :get, id: 'friend-lookup-form' do %>
-    <div class="form-group row no-padding text-center col-md-12">
+    <div class="form-group row no-padding text-center">
       <div class="col-md-10">
-        <%= text_field_tag :search_params, params[:search_params], placeholder: "first name, last name or email", autofocus: true, class: 'form-control, search-box input-lg' %>
+        <!-- fout, geeft een te smal veld
+        <%= text_field_tag :search_params, params[:search_params], placeholder: "first name, last name or email", autofocus: true, class: 'form-control, search-box input-lg' %>  -->
+        <%= text_field_tag :search_params, params[:search_params], placeholder: "first name, last name or email", autofocus: true, class: 'form-control search-box input-lg' %>
       </div>
       <div class="col-md-2">
         <%= button_tag(type: :submit, class: "btn btn-lg btn-success") do %>
