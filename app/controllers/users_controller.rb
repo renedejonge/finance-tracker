@@ -14,6 +14,8 @@ class UsersController < ApplicationController
 
     if @users
       @users = current_user.except_current_user(@users)
+      # render de partial /friends/_lookup.html.erb opnieuw op de pagina
+      # waarbij @users hierboven tot je beschikking staat
       render partial: "friends/lookup"
     else
       render status: :not_found, nothing: true
@@ -28,6 +30,11 @@ class UsersController < ApplicationController
     else
       redirect_to my_friends_path, flash[:error] = "There was an error with adding user as a friend"
     end
+  end
+
+  def show
+    @user = User.find(params[:id])
+    @user_stocks =@user.stocks
   end
   
 end
